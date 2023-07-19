@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Condensed;
+    src: url(Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf);
+}
+
+body {
+    background-color: #edf2f8;
+    position: relative;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+footer {
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    font-family: Condensed;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.box {
+    border-radius: 7px;
+}
+
+.flex {
+    display: flex;
+}
+
+.one {
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+    justify-content: center;
+    color: hsl(0, 0%, 81%);
+}
+
+.one .img {
+    position: absolute;
+}
+
+.contain {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.containerone {
+    z-index: 1;
+}
+
+.fle {
+    justify-content: flex-start;
+}
+
+.fle img {
+    border-radius: 50%
+}
+
+.flee {
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.mar {
+    margin: 0px;
+}
+
+.fade1 {
+    color: hsla(0, 0%, 81%, 0.5);
+    font-size: 12px;
+}
+
+.fade1d {
+    color: hsl(217, 19%, 35%, 0.5);
+    font-size: 12px;
+}
+
+.fade2 {
+    color: hsl(0, 0%, 81%, 0.7)
+}
+
+.fade2d {
+    color: hsl(217, 19%, 35%, 0.7)
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.two {
+    background-color: hsl(217, 19%, 35%);
+    justify-content: center;
+    color: hsl(0, 0%, 81%);
+}
+
+.three {
+    background-color: white;
+    justify-content: center;
+    color: hsl(217, 19%, 35%)
+}
+
+.four {
+    background-color: white;
+    justify-content: center;
+    color: hsl(217, 19%, 35%)
+}
+
+.five {
+    background-color: hsl(219, 29%, 14%);
+    justify-content: center;
+    color: hsl(0, 0%, 81%);
+}
+
+
+
+@media only screen and (min-width:1440px) {
+    body {
+        width: 1440px;
+        height: 900px;
+    }
+
+    .container {
+        grid-column-gap: 30px;
+        grid-row-gap: 25px;
+        grid-template-columns: repeat(4, 255px);
+        grid-template-rows: 280px 265px;
+    }
+
+    .one {
+        grid-area: 1/1/2/3;
+    }
+
+    .one .img {
+        right: 80px;
+    }
+
+    .containerone {
+        width: 476px;
+        height: 230px;
+    }
+
+    .containertwo {
+        width: 191px;
+        height: 228px;
+    }
+
+    .three {
+        grid-area: 1/4/3/5;
+    }
+
+    .containerthree {
+        width: 195px;
+        height: 520px;
+    }
+
+    .containerfour {
+        width: 185px;
+        height: 214px;
+    }
+
+    .five {
+        grid-area: 2/2/3/4;
+    }
+
+    .containerfive {
+        width: 479px;
+        height: 214px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    body {
+        width: 375px;
+        height: 1966px;
+    }
+
+    .container {
+        grid-row-gap: 25px;
+        grid-template-rows: 444px 242px 224px 385px 438px;
+        grid-template-columns: 329px;
+    }
+
+    .one {
+        grid-area: 1
+    }
+
+    .one .img {
+        right: 23px;
+    }
+
+    .containerone {
+        width: 267px;
+        height: 391px;
+    }
+
+    .two {
+        grid-area: 2
+    }
+
+    .containertwo {
+        width: 267px;
+        height: 188px;
+    }
+
+    .three {
+        grid-area: 5
+    }
+
+    .containerthree {
+        width: 267px;
+        height: 384px;
+    }
+
+    .four {
+        grid-area: 3
+    }
+
+    .containerfour {
+        width: 267px;
+        height: 168px;
+    }
+
+    .five {
+        grid-area: 4
+    }
+
+    .containerfive {
+        width: 267px;
+        height: 334px;
+    }
+}
